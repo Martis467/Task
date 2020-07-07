@@ -22,7 +22,7 @@ namespace LoanCalculator
 
             var calculator = new PaymentCalculator(parameters);
             var graph = calculator.GetPaymentGraph();
-            int i = 1;
+            var i = 1;
 
             Console.WriteLine("Įmokos Nr.\t | Data\t\t |  Likutis prieš įmoką\t | Kredito dalis\t | Palūkanos\t | Įmoka\t | Likutis po įmokos");
             foreach(var g in graph.PaymentEntries)
